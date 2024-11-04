@@ -366,6 +366,16 @@ config XLNX_R5_REMOTEPROC
 
 	  It's safe to say N if not interested in using RPU r5f cores.
 
+config CVITEK_REMOTEPROC
+	tristate "cvitek remoteproc support"
+	depends on ARCH_CVITEK
+	help
+	  Say y here to support CVITEK's processors via the remote
+	  processor framework.
+	  This can be either built-in or a loadable module.
+
+
+
 endif # REMOTEPROC
 
 endmenu

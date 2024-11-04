@@ -272,7 +272,7 @@ void __init setup_arch(char **cmdline_p)
 	misc_mem_init();
 
 	init_resources();
-
+early_init_fdt_scan_reserved_mem();
 #ifdef CONFIG_KASAN
 	kasan_init();
 #endif
